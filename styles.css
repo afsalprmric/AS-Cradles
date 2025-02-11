@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Overlay for better text readability */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: translateY(-2px);
+}
+
+
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+#about {
+  background-color:rgb(75, 76, 77); /* Light background color */
+  padding: 40px 0; /* Vertical padding */
+}
+
+#about h2 {
+  font-size: 2.5rem; /* Larger font size for the heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+#about p {
+  font-size: 1.1rem; /* Slightly larger font size for paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+#about h3 {
+  font-size: 2rem; /* Font size for subheading */
+  margin-top: 30px; /* Space above the subheading */
+}
+
+#about ul {
+  list-style-type: disc; /* Bullet points for the list */
+  margin-left: 20px; /* Indentation for the list */
+}
+
+#about li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size:  2rem;
+  color:rgb(252, 253, 255);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color:rgb(95, 101, 109);
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #212529;;
+  color: white;
+}
+
+
+#home {
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
