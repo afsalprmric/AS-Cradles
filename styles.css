@@ -6,6 +6,13 @@ body {
   margin-bottom: 20px;
 }
 
+.navbar {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: white; /* Background color to avoid transparency */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
 /* Hero Section Styling */
 .hero-section {
   background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
